@@ -1,0 +1,51 @@
+2025-09-17 20:11:47 [main] INFO  c.m.e.EurekaMonitorApplicationTests - Starting EurekaMonitorApplicationTests using Java 17.0.5 on abhinav-nuc-i7 with PID 36456 (started by abhin in D:\DEVELOPMENT\GITHUB_AI\claude-sb-eureka-monitor-service)
+2025-09-17 20:11:47 [main] INFO  c.m.e.EurekaMonitorApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 20:11:48 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f22be67b-ab95-3faa-b848-f389a561f269
+2025-09-17 20:11:50 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-09-17 20:11:50 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-09-17 20:11:50 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-09-17 20:11:50 [main] INFO  c.m.e.EurekaMonitorApplicationTests - Started EurekaMonitorApplicationTests in 3.771 seconds (JVM running for 4.759)
+2025-09-17 20:13:31 [main] INFO  c.m.eureka.EurekaMonitorApplication - Starting EurekaMonitorApplication using Java 21.0.7 on abhinav-nuc-i7 with PID 9280 (D:\DEVELOPMENT\GITHUB_AI\claude-sb-eureka-monitor-service\target\classes started by abhin in D:\DEVELOPMENT\GITHUB_AI\claude-sb-eureka-monitor-service)
+2025-09-17 20:13:31 [main] INFO  c.m.eureka.EurekaMonitorApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 20:13:32 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=896fa2d0-e0c7-326a-9227-3b56397a0406
+2025-09-17 20:13:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2025-09-17 20:13:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-17 20:13:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2025-09-17 20:13:32 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-17 20:13:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 983 ms
+2025-09-17 20:13:33 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-09-17 20:13:33 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-09-17 20:13:33 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-09-17 20:13:33 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8090 is already in use
+2025-09-17 20:13:33 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-09-17 20:13:33 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-09-17 20:13:33 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+
+2025-09-17 20:14:17 [main] INFO  c.m.eureka.EurekaMonitorApplication - Starting EurekaMonitorApplication using Java 21.0.7 on abhinav-nuc-i7 with PID 25240 (D:\DEVELOPMENT\GITHUB_AI\claude-sb-eureka-monitor-service\target\classes started by abhin in D:\DEVELOPMENT\GITHUB_AI\claude-sb-eureka-monitor-service)
+2025-09-17 20:14:17 [main] INFO  c.m.eureka.EurekaMonitorApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 20:14:18 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=896fa2d0-e0c7-326a-9227-3b56397a0406
+2025-09-17 20:14:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+2025-09-17 20:14:18 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-17 20:14:18 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2025-09-17 20:14:18 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-17 20:14:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1163 ms
+2025-09-17 20:14:19 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-09-17 20:14:19 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-09-17 20:14:19 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-09-17 20:14:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+2025-09-17 20:14:19 [main] INFO  c.m.eureka.EurekaMonitorApplication - Started EurekaMonitorApplication in 2.5 seconds (JVM running for 3.149)
+2025-09-17 20:14:19 [RMI TCP Connection(5)-192.168.0.10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'

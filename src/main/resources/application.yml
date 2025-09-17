@@ -1,0 +1,58 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: eureka-monitor-service
+
+eureka:
+  client:
+    enabled: false
+    register-with-eureka: false
+    fetch-registry: false
+
+monitoring:
+  eureka:
+    registries:
+      - name: "app1-eureka"
+        url: "http://localhost:8761/eureka"
+        basicAuth:
+          enabled: false
+          username: ""
+          password: ""
+        expectedServices:
+          - "user-service"
+          - "order-service"
+          - "payment-service"
+      - name: "app2-eureka"
+        url: "http://localhost:8762/eureka"
+        basicAuth:
+          enabled: true
+          username: "admin"
+          password: "admin123"
+        expectedServices:
+          - "inventory-service"
+          - "notification-service"
+    checkInterval: 30000 # milliseconds
+    connectionTimeout: 5000 # milliseconds
+    readTimeout: 10000 # milliseconds
+
+logging:
+  level:
+    com.monitoring.eureka: INFO
+    org.springframework.web: WARN
+    org.apache.http: WARN
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: logs/eureka-monitor.log
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
