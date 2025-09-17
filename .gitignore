@@ -1,0 +1,26 @@
+# Maven build output
+/target/
+
+# Logs
+logs/
+*.log
+
+# IDE files
+/.idea/
+/*.iml
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Java
+*.class
+
+# Environment files
+.env
+
+# Misc
+*.swp
+*.swogit rm -r --cached target
+git commit -m "Stop tracking target directory"
